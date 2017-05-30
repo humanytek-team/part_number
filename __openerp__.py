@@ -20,9 +20,9 @@
 
 {
     'name': 'Part number',
-    'version': '1.0',
+    'version': '1.1',
     'author': 'Humanytek',
-    'website': 'http://github.com/humanytek-team/part_number',
+    'website': 'https://github.com/humanytek-team/part_number',
     'depends': [
         'stock',
     ],
