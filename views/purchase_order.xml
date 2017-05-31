@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<openerp>
+    <data>
+        <record model="ir.ui.view" id="purchase_order_part_number_form">
+            <field name="name">purchase.order.part_number.form</field>
+            <field name="model">purchase.order</field>
+            <field name="inherit_id" ref="purchase.purchase_order_form"/>
+            <field name="arch" type="xml">
+                <field name="product_id" position="after">
+                    <field name="part_number"/>
+                </field>
+            </field>
+        </record>
+    </data>
+</openerp>
