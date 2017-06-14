@@ -20,13 +20,14 @@
 
 {
     'name': 'Part number',
-    'version': '1.3',
+    'version': '1.4',
     'author': 'Humanytek',
     'website': 'https://github.com/humanytek-team/part_number',
     'depends': [
         'purchase',
     ],
     'data': [
+        'views/product_product.xml',
         'views/product_template.xml',
         'views/purchase_order.xml',
         'views/purchase_report.xml',
