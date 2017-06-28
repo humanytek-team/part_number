@@ -28,7 +28,6 @@
     ],
     'data': [
         'views/product_product.xml',
-        'views/product_template.xml',
         'views/purchase_order.xml',
         'views/purchase_report.xml',
     ]

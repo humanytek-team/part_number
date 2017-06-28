@@ -11,5 +11,27 @@
                 </field>
             </field>
         </record>
+
+        <record model="ir.ui.view" id="product_product_part_number_tree_view">
+            <field name="name">product.product.part_number.tree</field>
+            <field name="model">product.product</field>
+            <field name="inherit_id" ref="product.product_product_tree_view"/>
+            <field name="arch" type="xml">
+                <field name="default_code" position="before">
+                    <field name="part_number"/>
+                </field>
+            </field>
+        </record>
+
+        <record model="ir.ui.view" id="product_part_number_search_form_view">
+            <field name="name">product.product.part_number.search</field>
+            <field name="model">product.product</field>
+            <field name="inherit_id" ref="product.product_search_form_view"/>
+            <field name="arch" type="xml">
+                <field name="name" position="replace">
+                    <field name="name" string="Product" filter_domain="['|',('default_code','ilike',self),'|',('name','ilike',self),('part_number','ilike',self)]"/>
+                </field>
+            </field>
+        </record>
     </data>
 </openerp>
